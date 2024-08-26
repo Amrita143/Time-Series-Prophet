@@ -4,4 +4,3 @@ prophet
 plotly
 pandas
 numpy
-concurrent-futures
