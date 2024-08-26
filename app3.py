@@ -6,7 +6,8 @@ import plotly.graph_objs as go
 from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
-from concurrent.futures import ProcessPoolExecutor, as_completed
+import multiprocessing
+from multiprocessing import ProcessPoolExecutor, as_completed
 
 # Initialize session state
 if 'stocks' not in st.session_state:
