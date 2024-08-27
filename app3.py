@@ -1,13 +1,12 @@
+import numpy as np
+np.float_ = np.float64
 import streamlit as st
 import yfinance as yf
 from prophet import Prophet
 from prophet.plot import plot_plotly
-import plotly.graph_objs as go
 from datetime import datetime, timedelta
 import pandas as pd
-import numpy as np
-import multiprocessing
-from multiprocessing import ProcessPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # Initialize session state
 if 'stocks' not in st.session_state:
