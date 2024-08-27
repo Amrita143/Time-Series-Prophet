@@ -1,11 +1,11 @@
 import numpy as np
 np.float_ = np.float64
+from prophet import Prophet
+import pandas as pd
+from datetime import datetime, timedelta
 import streamlit as st
 import yfinance as yf
-from prophet import Prophet
 from prophet.plot import plot_plotly
-from datetime import datetime, timedelta
-import pandas as pd
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # Initialize session state
