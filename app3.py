@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import streamlit as st
 import yfinance as yf
 from prophet.plot import plot_plotly
-import plotly.graph_objs as go
+from plotly import graph_objs as go
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # Initialize session state
